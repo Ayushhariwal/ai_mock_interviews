@@ -8,7 +8,7 @@ const RootLayout = async  ({children} : {children: ReactNode}) => {
 
     const isUserAuthenticated =  await isAuthenticated();
 
-    if(!isUserAuthenticated) redirect("/sign-in");
+    // if(!isUserAuthenticated) redirect("/sign-in");
       
     return (
         <div className="root-layout">
@@ -17,8 +17,6 @@ const RootLayout = async  ({children} : {children: ReactNode}) => {
                     <Image src="/logo.svg" alt="logo" width={32} height={32} />
                      <h2 className="text-primary-100"> PrepWise</h2>
                 </Link>
-
-               
            </nav>
            {children}
         </div>

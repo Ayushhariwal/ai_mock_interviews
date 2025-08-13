@@ -24,7 +24,7 @@
 
   --font-mona-sans: "Mona Sans", sans-serif;
 
-  --bg-pattern: url("/public/pattern.png");
+  --bg-pattern: url("/pattern.png");
 }
 
 :root {
@@ -139,22 +139,22 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground text-base; /* Change from default to text-base or text-sm */
   }
   p {
-    @apply text-light-100;
+    @apply text-light-100 text-sm; /* Add text-sm */
   }
   h2 {
-    @apply text-3xl font-semibold;
+    @apply text-xl font-semibold; /* Change from text-3xl to text-xl */
   }
   h3 {
-    @apply text-2xl font-semibold;
+    @apply text-lg font-semibold; /* Change from text-2xl to text-lg */
   }
   ul {
     @apply list-disc list-inside;
   }
   li {
-    @apply text-light-100;
+    @apply text-light-100 text-sm; /* Add text-sm */
   }
 }
 
